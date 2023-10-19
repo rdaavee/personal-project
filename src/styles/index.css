@@ -44,135 +44,18 @@
 
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: var(--second-font);
+    font-family: 'Poppins', sans-serif;
 }
 
-body {
-    background-repeat: no-repeat;
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,50,0.8), rgba(0,0,50,0.8), url(/src/assets/phinma_bg.jpg));
+    background-position: center;
     background-size: cover;
-    background-color: var(--body-color);
-    background-image: url("https://images.unsplash.com/photo-1635776062360-af423602aff3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80");
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: #f2f2f2;
-    font-size: var(--font-size);
-}
-
-a:hover {
-    color: #5E948E;
-}
-
-/* HEADER */
-header {
     position: relative;
-    padding: 0 2rem;
-}
-
-.navbar {
-    width: 100%;
-    height: 3.75rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar .logo a {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.navbar .links {
-    display: flex;
-    gap: 2rem;
-}
-
-.navbar .toggleBtn {
-    color: #f2f2f2;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-.getStartedBtn {
-    background-color: #5E948E;
-    padding: 0.5rem 1rem;
-    color: #f2f2f2;
-    border: none;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.6) 1px 2px 5px;
-}
-
-.getStartedBtn:hover {
-    scale: 1.05;
-    color: #f2f2f2;
-    transition: 0.5s;
-}
-
-.getStartedBtn:active {
-    scale: 0.95;
-}
-
-/* DROPDOWN MENU */
-.dropdown_menu {
-    display: none;
-    position: absolute;
-    right: 2rem;
-    top: 60px;
-    height: 0;
-    width: 300px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.dropdown_menu.open {
-    height: 240px;
-}
-
-.dropdown_menu li {
-    padding: 0.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.dropdown_menu .getStartedBtn {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-/* RESPONSIVENESS */
-@media(max-width: 992px) {
-    .navbar .links,
-    .navbar .getStartedBtn {
-        display: none;
-    }
-
-    .navbar .toggleBtn {
-        display: block;
-    }
-
-    .dropdown_menu {
-        display: block;
-    }
 }
